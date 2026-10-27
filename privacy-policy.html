@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Damathy</title>
+    <style>
+        :root {
+            --bg-color: #0c0e12;
+            --surface-color: #151921;
+            --card-border: #222938;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --accent-blue: #3b82f6;
+            --accent-glow: rgba(59, 130, 246, 0.15);
+            --table-header: #1e293b;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 28px 16px;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--surface-color);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 40px 32px;
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+        }
+        header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--card-border);
+            padding-bottom: 24px;
+        }
+        h1 {
+            font-size: 2.1rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+            letter-spacing: -0.02em;
+        }
+        .meta {
+            font-size: 0.92rem;
+            color: var(--text-secondary);
+        }
+        h2 {
+            font-size: 1.35rem;
+            color: #93c5fd;
+            margin-top: 36px;
+            margin-bottom: 14px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        h3 {
+            font-size: 1.1rem;
+            color: #e2e8f0;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p, ul, ol {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+        ul, ol {
+            padding-left: 24px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: var(--text-primary);
+        }
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #60a5fa;
+        }
+        .callout {
+            background: var(--accent-glow);
+            border-left: 4px solid var(--accent-blue);
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 24px 0;
+            color: #dbeafe;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.92rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--card-border);
+        }
+        th, td {
+            padding: 12px 14px;
+            text-align: left;
+            border-bottom: 1px solid var(--card-border);
+        }
+        th {
+            background: var(--table-header);
+            color: #f8fafc;
+            font-weight: 600;
+        }
+        td {
+            color: var(--text-secondary);
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--card-border);
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Privacy Policy for Damathy</h1>
+        <p class="meta"><strong>Effective Date:</strong> October 20, 2026 | <strong>Last Updated:</strong> October 20, 2026</p>
+    </header>
+
+    <div class="callout">
+        This Privacy Policy explains how <strong>Damathy</strong> ("we", "our", or "the App") collects, uses, discloses, and protects your information when you install and play our Android mobile application. We are committed to maintaining high privacy standards and transparency.
+    </div>
+
+    <h2>1. Overview & Core Architecture</h2>
+    <p>
+        Damathy is an educational mathematics board game implementing Philippine Damath (Mathematical Checkers). The application is built client-side: all game logic, neural network evaluation (NNUE), bot artificial intelligence, tactical puzzle generation, and match histories are calculated and stored locally on your device.
+    </p>
+    <p>
+        <strong>We do not maintain private backend servers that collect, store, or sell your personal identifiable information.</strong> You do not need to register an account, log in, or provide your real name, email address, or phone number to access the game.
+    </p>
+
+    <h2>2. Data Stored Locally on Your Device</h2>
+    <p>
+        To ensure seamless gameplay across app sessions without requiring a remote database, Damathy stores the following data locally on your device via HTML5 Local Storage:
+    </p>
+    <ul>
+        <li><strong>Game Preferences:</strong> Board orientation, piece rotation, sound/audio settings, animation states, and interface language.</li>
+        <li><strong>Gameplay Records:</strong> Move history trees (PGN), captured piece logs, scores, and bot completion crown records.</li>
+        <li><strong>Puzzle Progress & Quotas:</strong> Solved puzzle indices, daily bonus counters, and ad cooldown timestamps.</li>
+    </ul>
+    <p>
+        This information is confined to your device's native app sandbox and is never uploaded to our servers.
+    </p>
+
+    <h2>3. Third-Party Services & Automated Data Collection</h2>
+    <p>
+        To provide Damathy free of charge, we partner with trusted third-party advertising and platform service providers that automatically collect certain technical diagnostic and advertising data:
+    </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Service Provider</th>
+                <th>Purpose</th>
+                <th>Data Processed</th>
+                <th>Privacy Documentation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Google Play Services</strong></td>
+                <td>Core Android platform services, security checks, in-app updates.</td>
+                <td>Device model, OS version, Android ID, crash diagnostics.</td>
+                <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></td>
+            </tr>
+            <tr>
+                <td><strong>Google AdMob</strong></td>
+                <td>Delivery of banner, interstitial, and rewarded video advertisements.</td>
+                <td>Google Advertising ID (AAID), IP address (approximate location), ad interaction metrics, diagnostics.</td>
+                <td><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google Ads Policy</a> &bull; <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Partner Disclosures</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>4. Google Play "Data Safety" Questionnaire Mapping</h2>
+    <p>
+        In accordance with Google Play's Data Safety declaration requirements, below is the transparent breakdown of how data is handled within Damathy:
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Data Category</th>
+                <th>Collected?</th>
+                <th>Shared?</th>
+                <th>Purpose</th>
+                <th>Encrypted in Transit?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Device or other IDs</strong> (Advertising ID / AAID)</td>
+                <td>Yes (via AdMob)</td>
+                <td>Yes (with Google AdMob)</td>
+                <td>Advertising, Analytics, Fraud prevention</td>
+                <td>Yes (HTTPS / TLS)</td>
+            </tr>
+            <tr>
+                <td><strong>App Info & Performance</strong> (Crash logs, diagnostics)</td>
+                <td>Yes (via Google)</td>
+                <td>Yes (with Google)</td>
+                <td>App performance, stability, analytics</td>
+                <td>Yes (HTTPS / TLS)</td>
+            </tr>
+            <tr>
+                <td><strong>App Activity</strong> (Ad interactions)</td>
+                <td>Yes (via AdMob)</td>
+                <td>Yes (with Google AdMob)</td>
+                <td>Ad measurement, frequency capping</td>
+                <td>Yes (HTTPS / TLS)</td>
+            </tr>
+            <tr>
+                <td><strong>Personal Info</strong> (Name, email, phone, address)</td>
+                <td><strong>No</strong></td>
+                <td><strong>No</strong></td>
+                <td>N/A (App has no user accounts)</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td><strong>Financial & Payment Info</strong></td>
+                <td><strong>No</strong></td>
+                <td><strong>No</strong></td>
+                <td>N/A (App is 100% free with no IAPs)</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td><strong>Precise Location (GPS)</strong></td>
+                <td><strong>No</strong></td>
+                <td><strong>No</strong></td>
+                <td>N/A</td>
+                <td>N/A</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>5. European Economic Area (EEA), UK & Swiss Privacy Rights (GDPR)</h2>
+    <p>
+        If you reside in the EEA, UK, or Switzerland, you are entitled to specific legal rights under the General Data Protection Regulation (GDPR) and UK GDPR:
+    </p>
+    <ul>
+        <li><strong>Legal Basis for Processing:</strong> We rely on our <em>legitimate interests</em> to deliver app functionality and maintain security, and your explicit <em>consent</em> for serving personalized advertisements.</li>
+        <li><strong>User Consent Management:</strong> We utilize Google's User Messaging Platform (UMP) consent SDK. When launching the app, users in applicable jurisdictions can choose to consent or refuse personalized ad targeting.</li>
+        <li><strong>Your Rights:</strong> You have the right to access, rectify, restrict, or request erasure of your data, or object to processing. Because we do not store personal profiles on private servers, clearing your device's app storage immediately erases your local data.</li>
+    </ul>
+
+    <h2>6. United States State Privacy Rights (California CCPA/CPRA, Virginia, Colorado)</h2>
+    <p>
+        Under the California Consumer Privacy Act as amended by the California Privacy Rights Act (CCPA/CPRA), California residents have specific privacy rights:
+    </p>
+    <ul>
+        <li><strong>"Do Not Sell or Share My Personal Information":</strong> We do not sell your personal data for monetary consideration. However, sharing advertising identifiers with ad networks for cross-context behavioral advertising may be considered "sharing" or "targeted advertising" under US state privacy laws.</li>
+        <li><strong>Opt-Out Mechanism:</strong> You can opt out of personalized / targeted advertising at any time by configuring your Android device settings:
+            <br><em>Settings &rarr; Google &rarr; Ads &rarr; Reset advertising ID or Delete advertising ID.</em>
+        </li>
+        <li><strong>Non-Discrimination:</strong> We will never discriminate against you for exercising any of your privacy rights.</li>
+    </ul>
+
+    <h2>7. Children's Privacy (COPPA Compliance)</h2>
+    <p>
+        Damathy is an educational game designed for students, teachers, and math enthusiasts of all ages. We take children's privacy seriously and comply with the Children's Online Privacy Protection Act (COPPA).
+    </p>
+    <ul>
+        <li>We do not knowingly collect personally identifiable information from children under the age of 13 (or under 16 in the European Union).</li>
+        <li>In accordance with Google Play's Families Policy, ad requests served to child-directed users are configured with <code>tagForChildDirectedTreatment</code> and <code>tagForUnderAgeOfConsent</code>, restricting ad networks to contextual, non-personalized advertising only.</li>
+        <li>If a parent or guardian discovers that a child has provided personally identifiable information to a third party through the app, please contact us immediately so we can assist in removing it.</li>
+    </ul>
+
+    <h2>8. Data Retention & Deletion Instructions</h2>
+    <ul>
+        <li><strong>Local Data:</strong> All local game records and preferences remain on your device indefinitely until you choose to delete them. You can delete all locally stored game data at any time by going to:
+            <br><em>Android Settings &rarr; Apps &rarr; Damathy &rarr; Storage &rarr; Clear Data / Clear Cache</em> (or by uninstalling the application).
+        </li>
+        <li><strong>Ad Network Data:</strong> Data collected by Google AdMob is retained in accordance with Google's published data retention periods (typically between 9 and 14 months for pseudonymized ad measurement logs).</li>
+    </ul>
+
+    <h2>9. Security Measures</h2>
+    <p>
+        We protect your information through device-level sandbox isolation and require all integrated third-party SDKs to communicate exclusively over secure Transport Layer Security (HTTPS / TLS 1.3) encrypted connections.
+    </p>
+
+    <h2>10. Updates to This Policy</h2>
+    <p>
+        We may update this Privacy Policy from time to time to reflect modifications in our features or changes in statutory regulations. Any revisions will be published on this URL with an updated "Last Updated" timestamp.
+    </p>
+
+    <h2>11. Contact Us</h2>
+    <p>
+        If you have any questions, suggestions, or requests regarding this Privacy Policy, please contact us at:
+    </p>
+    <p>
+        <strong>Email:</strong> <a href="mailto:damathylabs.support@gmail.com">damathylabs.support@gmail.com</a>
+        <br><strong>Developer:</strong> Damathy Labs
+        <br><strong>Website:</strong> <a href="index.html">Damathy Developer Portal</a>
+    </p>
+
+    <footer>
+        &copy; 2026 Damathy. All rights reserved. &bull; <a href="terms-of-service.html">Terms of Service</a> &bull; <a href="app-ads.txt">app-ads.txt</a>
+    </footer>
+</div>
+
+</body>
+</html>
