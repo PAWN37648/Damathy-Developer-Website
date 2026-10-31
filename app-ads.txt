@@ -1,3 +1,2 @@
 # Google AdMob app-ads.txt for Damathy
-# Replace "pub-0000000000000000" with your actual AdMob Publisher ID from your AdMob account settings.
-google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-1287930945760170, DIRECT, f08c47fec0942fa0
